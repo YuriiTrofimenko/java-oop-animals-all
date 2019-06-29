@@ -7,5 +7,13 @@ public class Cat extends AbstractPet implements ISoundable {
     }
 
     public void sound() {
+        System.out.println("Мяу!");
     }
+
+    @Override
+    public void eat() {
+        System.out.println("Ем мышь");
+    }
+    
+    
 }

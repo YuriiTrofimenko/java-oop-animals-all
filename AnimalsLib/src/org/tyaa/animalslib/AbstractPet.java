@@ -4,10 +4,11 @@ public abstract class AbstractPet extends AbtractAnimal {
 
     private String name;
 
-    public String setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public String getName() {
+        return name;
     }
 
-    public void getName() {
+    public void setName(String name) {
+        this.name = name;
     }
 }

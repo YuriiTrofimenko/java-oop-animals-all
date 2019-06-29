@@ -7,23 +7,26 @@ public abstract class AbtractAnimal {
     private int age;
 
     public void eat() {
-    }
-
-    public double setWeight(double weiht) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Ем пищу");
     }
 
     public double getWeight() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return weight;
     }
 
-    public int setAge(int age) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     public int getAge() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return age;
     }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
 
     public abstract void breathe();
 }
