@@ -12,7 +12,7 @@ public class Circle extends AbstractShape implements IScalable {
     }
 
     @Override
-    public void scale(Integer _zoom) {
+    public void scale(Double _zoom) {
         radius = radius * _zoom;
     }
 }

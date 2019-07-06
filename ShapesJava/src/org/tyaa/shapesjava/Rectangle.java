@@ -10,11 +10,12 @@ public class Rectangle extends AbstractShape implements IScalable {
 
     @Override
     public void show() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Rectangle: [StartPoint: x = " + startPoint.getX() + "; y = " + startPoint.getY() + "; width = " + width + "; height = " + height +"]");
     }
 
     @Override
-    public void scale(Integer _zoom) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void scale(Double _zoom) {
+        width = width * _zoom;
+        height = height * _zoom;
     }
 }
