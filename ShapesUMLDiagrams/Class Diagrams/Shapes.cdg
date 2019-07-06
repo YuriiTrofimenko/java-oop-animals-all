@@ -9,13 +9,6 @@
         <Method name="show" returnType="void" visibility="public" isAbstract="true"/>
       </Methods>
     </Class>
-    <Interface name="IScalable" package="" visibility="public" xPosition="143.0" yPosition="25.0">
-      <Methods>
-        <Method name="scale" returnType="Integer" visibility="public">
-          <Argument type="Integer" name="_zoom"/>
-        </Method>
-      </Methods>
-    </Interface>
     <Class name="Point" package="" visibility="public" xPosition="709.0" yPosition="264.0">
       <Fields>
         <Field name="x" type="Double" visibility="private"/>
@@ -50,12 +43,19 @@
       <Constructors/>
       <Methods/>
     </Class>
+    <Interface name="IScalable" package="" visibility="public" xPosition="143.0" yPosition="25.0">
+      <Methods>
+        <Method name="scale" returnType="void" visibility="public">
+          <Argument type="Integer" name="_zoom"/>
+        </Method>
+      </Methods>
+    </Interface>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
+    <IsRelation name="is" source="Circle" target="AbstractShape"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rectangle" target="IScalable"/>
     <IsRelation name="is" source="Point" target="AbstractShape"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Circle" target="IScalable"/>
     <IsRelation name="is" source="Rectangle" target="AbstractShape"/>
-    <IsRelation name="is" source="Circle" target="AbstractShape"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rectangle" target="IScalable"/>
   </ClassDiagramRelations>
 </ClassDiagram>
