@@ -2,5 +2,7 @@ package org.tyaa.animalslib;
 
 public interface ISoundable {
 
-    public void sound();
+    default void sound() {
+        System.out.println("Издаю звук...");
+    }
 }

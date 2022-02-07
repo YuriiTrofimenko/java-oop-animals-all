@@ -6,6 +6,7 @@ public class Cat extends AbstractPet implements ISoundable {
         System.out.println("Дышу легкими");
     }
 
+    @Override
     public void sound() {
         System.out.println("Мяу!");
     }

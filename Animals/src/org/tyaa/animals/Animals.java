@@ -7,6 +7,7 @@ package org.tyaa.animals;
 
 import org.tyaa.animalslib.Cat;
 import org.tyaa.animalslib.Goldfish;
+import org.tyaa.animalslib.Leopard;
 
 /**
  *
@@ -22,9 +23,13 @@ public class Animals {
         Cat cat = new Cat();
         cat.breathe();
         cat.eat();
-        
+        cat.sound();
+        System.out.println();
         Goldfish g = new Goldfish();
         g.eat();
+        System.out.println();
+        Leopard leopard = new Leopard();
+        leopard.sound();
     }
     
 }
